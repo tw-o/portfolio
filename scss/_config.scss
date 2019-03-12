@@ -1,7 +1,7 @@
-$primary-color: #0f0b0b;
-$secondary-color: #582601;
+$primary-color: #110e29;
+$secondary-color: #7447a6;
 $show-home-image: true;
-$home-image: url(../img/ody.jpg);
+$home-image: url(../img/c.jpg);
 $background-opacity: 0.666;
 
 @mixin easeOut {
@@ -26,6 +26,15 @@ $background-opacity: 0.666;
         background: rgba($primary-color, $background-opacity);
       }
     }
+  }
+}
+
+// Set text color
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return #000000;
+  } @else {
+    @return #fff;
   }
 }
 
