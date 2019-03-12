@@ -9,6 +9,8 @@
   "author": "Taylor Onder",
   "license": "MIT",
   "dependencies": {
-    "node-sass": "^4.11.0"
-  }
+    "node-sass": "^4.11.0",
+    "sass": "^1.17.2"
+  },
+  "devDependencies": {}
 }
