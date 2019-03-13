@@ -13,8 +13,13 @@
     margin: 0 0 5px 0;
     background: set-text-color($primary-color);
     @include easeOut;
+    &:nth-child(1) {
+      background: #c162b8;
+    }
+    &:nth-child(3) {
+      background: #7447a6;
+    }
   }
-
   // Rotate Into X With Menu Lines
   &.close {
     transform: rotate(66.6deg);
@@ -44,7 +49,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
+  opacity: 1;
   visibility: hidden;
 
   &.show {
@@ -76,7 +81,7 @@
     }
   }
 
-  //Branding side
+  // Branding side
   &-branding {
     background: $secondary-color;
     transform: translate3d(0, 100%, 0);
@@ -121,7 +126,7 @@
     @include easeOut;
 
     &:hover {
-      color: #f2b035;
+      color: #c162b8;
     }
   }
 }
